@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: rgba(0, 0, 0, 0.6);
   cursor: url("https://img.icons8.com/material-outlined/20/000000/cursor--v1.png"),
@@ -91,21 +94,18 @@ body {
     min-width: 0;
     border: 3px solid rgba(255, 255, 255, 0.6);
     border-radius: 0.5rem;
-    margin: 2.25rem 2.25rem;
+    margin: 1.75rem 1.75rem;
     background-color: rgb(147 147 147 / 5%);
     backdrop-filter: blur(2px);
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   }
   .logoImages {
     margin: 0.365rem;
-    width: 14rem;
-    height: 14rem;
+    width: 17rem;
+    height: 17rem;
     padding: 0.75rem 0.75rem;
   }
-  #heading {
-    margin: 1.25rem;
-    font-size: 3.5rem;
-  }
+  
   #centers,
   #of,
   #exe,
@@ -114,9 +114,10 @@ body {
     display: block;
   }
   .bigLetter {
-    font-size: 5rem;
-    color: #ff1919;
+    font-size: 5.5rem;
+    color: white;
     font-weight: 800;
+    margin-left: 0.5rem;
   }
   #centers,
   #of,
@@ -129,6 +130,7 @@ body {
   #at {
     font-size: 2rem;
     margin-bottom: 1.5rem;
+    color: white;
   }
   #sub-heading {
     margin-top: 2rem;
@@ -137,7 +139,8 @@ body {
     display:inline;
 }
 #college{
-   font-size: 3rem;
+   font-size: 2.5rem;
+   display: block;
 }
 
 }
