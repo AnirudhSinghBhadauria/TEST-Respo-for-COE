@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bangers&family=Bebas+Neue&family=Heebo:wght@300&family=Josefin+Sans:ital,wght@1,300;1,400&family=League+Spartan&family=Montserrat&family=Montserrat+Alternates:wght@700&family=Nunito+Sans&family=Nunito:wght@300&family=Open+Sans:wght@600&family=Press+Start+2P&family=Reenie+Beanie&family=Splash&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: url("https://img.icons8.com/material-outlined/20/000000/cursor--v1.png"),
+    default;
+}
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+#hero::before {
+  content: "";
+  background: url("Background.jpeg") center/cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.7;
+}
+#logo {
+  width: 14.5rem;
+  height: 14.5rem;
+  margin-top: 2rem;
+  position: relative;
+  border-radius: 50%;
+  transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#logo:hover {
+  transform: scale(1.05);
+  cursor: url("https://img.icons8.com/sf-regular/24/000000/hand-cursor.png"),
+    default;
+}
+#logoContianer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 38rem;
+  cursor: url("https://img.icons8.com/sf-regular/24/000000/hand-cursor.png"),
+    default;
+}
+.logoImages {
+  width: 15.5rem;
+  height: 15.5rem;
+  margin-top: 2rem;
+  transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.logoImages:hover {
+  transform: scale(1.1);
+}
+#headingSection {
+  position: relative;
+  text-align: center;
+  min-width: 100%;
+  color: white;
+}
+#heading {
+  margin-top: 1.125rem;
+  font-size: 3.5rem;
+  font-family: "League Spartan", sans-serif;
+}
+#sub-heading {
+  margin-top: 0.5rem;
+  font-size: 3rem;
+  font-family: "Bangers", cursive;
+  letter-spacing: 1.25px;
+  color: yellow;
+}
+#fullStop{
+    display: none;
+}
+
+/* <-----------------------Media Queries---------------------------> */
+@media (max-width: 655px) {
+  #logoContianer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    border-radius: 0.5rem;
+    margin: 2.25rem 2.25rem;
+    background-color: rgb(147 147 147 / 5%);
+    backdrop-filter: blur(2px);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
+  .logoImages {
+    margin: 0.365rem;
+    width: 14rem;
+    height: 14rem;
+    padding: 0.75rem 0.75rem;
+  }
+  #heading {
+    margin: 1.25rem;
+    font-size: 3.5rem;
+  }
+  #centers,
+  #of,
+  #exe,
+  #at,
+  #college {
+    display: block;
+  }
+  .bigLetter {
+    font-size: 5rem;
+    color: #ff1919;
+    font-weight: 800;
+  }
+  #centers,
+  #of,
+  #exe {
+    text-align: start;
+  }
+  #exe {
+    margin-bottom: 0.6rem;
+  }
+  #at {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  #sub-heading {
+    margin-top: 2rem;
+  }
+  #fullStop{
+    display:inline;
+}
+#college{
+   font-size: 3rem;
+}
+
+}
+/* <-----------------------/Media Queries---------------------------> */
